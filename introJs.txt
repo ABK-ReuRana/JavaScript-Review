@@ -1,0 +1,59 @@
+❤️ Data types  in javascript - 
+     Primitive Data Type :- {BBNNSU  => boolean, BigInt, Number, Null, Symbol, undefined }
+
+
+❤️ typeof  Primitive Data Type -
+    typeof 3.14 // Returns "number"
+    typeof true // Returns "boolean"
+    typeof 234567890123456789012345678901234567890n // Returns bigint
+    typeof "John Doe" // Returns "string"
+    typeof undefined // Returns "undefined"
+    typeof null // Returns "object" (kind of a bug in JavaScript)
+    typeof Symbol('symbol') // Returns Symbol
+
+
+❤️ Non-primitive types -
+    It is important to remember that any data type that is not a primitive data type, is of Object type in javascript.
+
+
+❤️ Implicit Type Coercion in javascript-
+       The automatic conversion of value from one data type to another.
+
+       1. 🍜String Coercion -
+               Example1 : x=3, y="3" , x+y ="33"  
+               Example2 : x=3 , y="3" , x-y=0 
+               
+               Note - ‘ + ‘ operator when used to add two numbers, outputs a number. The same ‘ + ‘ operator when used to add two strings, outputs the concatenated string:
+               Note - Type coercion also takes place when using the ‘ - ‘ operator, but the difference while using ‘ - ‘ operator is that, a string is converted to a number and then subtraction takes place.
+        
+        2. 🍜 Boolean Coercion -
+               Truthy values are those which will be converted (coerced) to true. Falsy values are those which will be converted to false.
+               All values except false, 0, 0n, -0, “”, null, undefined, and NaN are truthy values.
+
+        3. 🍜 Logical operators -
+               Do not return true or false. They always return one of the operands.
+
+               OR ( || ) operator - If the first value is truthy, then the first value is returned. Otherwise, always the second value gets returned.
+
+               AND ( && ) operator - If both the values are truthy, always the second value is returned. If the first value is falsy then the first value is returned or if the second value is falsy then the second value is returned.
+
+        4. 🍜Equality Coercion
+                  Equality coercion takes place when using ‘ == ‘ operator. As we have stated before, Not take place with '===' operator.
+
+
+❤️ JavaScript is a dynamically typed language. In a dynamically typed language, the type of a variable is checked during run-time in contrast to a statically typed language, where the type of a variable is checked during compile-time. A variable can hold the value of any data type.
+
+
+❤️NaN property represents the “Not-a-Number” value. It indicates a value that is not a legal number.   
+        🍜Note- isNaN() function converts the given value to a Number type, and then equates to NaN.
+
+        isNaN("Hello")  // Returns true
+        isNaN(345)   // Returns false
+        isNaN('1')  // Returns false, since '1' is converted to Number type which results in 0 ( a number) 
+        isNaN(true) // Returns false, since true converted to Number type results in 1 ( a number)
+        isNaN(false) // Returns false
+        isNaN(undefined) // Returns true
+
+
+❤️ In JavaScript, primitive data types are passed by value and non-primitive data types are passed by reference.
+
